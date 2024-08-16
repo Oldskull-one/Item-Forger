@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Forger</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .game-container {
+            display: flex;
+            width: 850px;
+            height: 525px;
+            border: 2px solid #ccc;
+            padding: 20px;
+            background-color: white;
+        }
+        .left-panel, .right-panel {
+            flex: 1;
+            padding: 10px;
+        }
+        .left-panel {
+            border-right: 2px solid #ccc;
+        }
+        .character {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .ingredients {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .ingredient {
+            border: 2px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .ingredient:hover {
+            background-color: #e0e0e0;
+        }
+        .popup {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="left-panel">
+            <div class="character">
+                <img src="Images/Character1.png" alt="Character" width="300">
+            </div>
+            <div class="ingredients">
+                <div class="ingredient">
+                    <p>Iron</p>
+                    <img src="Images/Iron.png" alt="Iron" />
+                </div>
+                <div class="ingredient">
+                    <p>Wood</p>
+                    <img src="Images/Wood.png" alt="Wood" />
+                </div>
+                <div class="ingredient">
+                    <p>Stone</p>
+                    <img src="Images/Stone.png" alt="Stone" />
+                </div>
+                <div class="ingredient">
+                    <p>Fire</p>
+                    <img src="Images/Fire.png" alt="Fire" />
+                </div>
+                <div class="ingredient">
+                    <p>Water</p>
+                    <img src="Images/Water.png" alt="Water" />
+                </div>
+                <div class="ingredient">
+                    <p>Earth</p>
+                    <img src="Images/Earth.png" alt="Earth" />
+                </div>
+            </div>
+            
+        </div>
+        <div class="right-panel">
+            <div class="forge-area">
+                <div class="quadrant"></div>
+                <div class="quadrant"></div>
+                <div class="quadrant"></div>
+                <div class="quadrant"></div>
+            </div>
+            <button class="forge-button">Forge Sword</button>
+            <div class="game-explanation">
+                <p>Our hero needs a sword. Pick the four necessary ingredients he needs to forge one.</p>
+            </div>
+        </div>
+
+       
+    </div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,82 @@
+.ingredients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
+    margin-top: 20px; 
+    justify-items: center; 
+}
+
+.ingredient {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredient img {
+    max-width: 50px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.ingredient p {
+    margin-bottom: 5px; 
+    font-weight: bold;
+    font-size: 20px;
+    font-family: fantasy;
+    margin-top: 0; 
+}
+.right-panel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+.forge-area {
+    width: 520px;
+    height: 310px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 3px solid #000;
+    position: relative;
+
+}
+
+.quadrant {
+    border: 1px solid #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.game-explanation {
+    margin-top: 370px; 
+    text-align: center; 
+    font-size: 25px; 
+    font-family: fantasy;
+    font-weight: bold; 
+    color: #333; 
+    width: 520px; 
+    margin-left: -320px;
+    margin-right: 520px;
+}
+.forge-button {
+    margin-top: 330px;
+    margin-left: -310px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ccc;
+    border: 2px solid #333;
+    cursor: pointer;
+    display: block; 
+}
+
+.forge-button:hover {
+    background-color: #999; 
+}
